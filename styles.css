@@ -1,0 +1,349 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #e0f2f1; /* Light teal background for the entire page */
+    color: #333;
+    line-height: 1.6;
+    background-image: url('path/to/subtle-texture.png'); /* Add a subtle texture */
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+.header-area {
+    background: #00796b; /* Slightly lighter teal */
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.signature {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffab40; /* Amber color for hover effect */
+}
+
+.menu_icon {
+    display: none;
+}
+
+/* Home Section */
+.FirstElement {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0;
+    background: #f1f8e9; /* Light greenish background */
+    background-image: url('path/to/subtle-pattern.png'); /* Add a subtle pattern */
+    background-size: cover;
+    background-repeat: repeat;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.profile-photo img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 6px solid #004d40; /* Deep teal border for profile picture */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-text {
+    max-width: 600px;
+    padding-left: 20px;
+}
+
+.profile-text h1 {
+    font-size: 36px;
+    margin: 0;
+    color: #004d40; /* Deep teal for main headings */
+}
+
+.profile-text p {
+    font-size: 18px;
+    margin: 20px 0;
+    color: #555; /* Slightly lighter color for text */
+}
+
+.btn-group {
+    margin: 20px 0;
+}
+
+.btn {
+    background: #004d40; /* Deep teal button background */
+    color: #fff;
+    padding: 12px 25px;
+    margin-right: 15px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+    font-size: 16px;
+    border: none;
+}
+
+.btn.active {
+    background: #ffab40; /* Amber button background when active */
+}
+
+.btn:hover {
+    background: #00251a; /* Darker teal for hover effect */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+.btn:focus {
+    outline: 3px solid #ffab40; /* Amber outline for focused buttons */
+    outline-offset: 2px;
+}
+
+.social a {
+    font-size: 24px;
+    margin-right: 20px;
+    color: #004d40;
+    transition: color 0.3s;
+}
+
+.social a:hover {
+    color: #ffab40; /* Amber color for social icons on hover */
+}
+
+/* About Section */
+.about-area {
+    padding: 60px 0;
+    background: #eceff1; /* Light grayish-blue for about section */
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555;
+}
+
+.about-skills {
+    max-width: 300px;
+}
+
+.about-skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-skills li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Education & Internship */
+.education-content, .internship {
+    padding: 60px 0;
+    background: #ffffff; /* White background for contrast */
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.timeline {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.circle-dot {
+    width: 14px;
+    height: 14px;
+    background: #ffab40; /* Amber color for timeline dots */
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.timeline-title {
+    margin: 0;
+    font-size: 18px;
+    color: #004d40; /* Deep teal for titles */
+}
+
+.timeline-text {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #666;
+}
+
+/* Projects Section */
+.project-content {
+    padding: 60px 0;
+    background: #e8f5e9; /* Very light green background for the projects section */
+}
+
+.project-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.project-title h4 {
+    font-size: 32px;
+    color: #004d40; /* Deep teal for project titles */
+    margin: 0;
+}
+
+.project-title p {
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project {
+    background: #ffffff;
+    padding: 25px;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px;
+    width: 30%;
+    margin: 15px 0;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly darker shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Darker shadow on hover */
+}
+
+.project i {
+    font-size: 36px;
+    color: #004d40; /* Deep teal for project icons */
+}
+
+.project h4 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #333;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #004d40;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.project a:hover {
+    color: #ffab40; /* Amber color for project links on hover */
+}
+
+/* Contact Section */
+.contact-area {
+    padding: 50px 0;
+    background: #ffffff; /* White background for contrast */
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.contact button {
+    background: #00796b; /* Teal button background */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact button:hover {
+    background: #004d40; /* Darker teal for hover effect */
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #004d40, #00796b); /* Gradient background */
+    color: #e0f2f1; /* Light teal for text in footer */
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: #ffab40; /* Amber color for footer links */
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #fff; /* White color for footer links on hover */
+}
